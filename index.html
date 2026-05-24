@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jane Doe — Personal Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-inner">
+      <span class="nav-logo">Jane Doe</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Jane Doe</h1>
+      <p class="hero-tagline">Software Developer &amp; Lifelong Learner</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-avatar">
+          <div class="avatar-placeholder">JD</div>
+        </div>
+        <div class="about-text">
+          <p>
+            Hello! I'm Jane, a passionate software developer based in Istanbul.
+            I love building clean, user-friendly products and solving problems
+            through code.
+          </p>
+          <p>
+            When I'm not coding, you'll find me reading, hiking, or exploring
+            new coffee shops. I'm currently open to new opportunities — feel
+            free to reach out!
+          </p>
+          <a href="#contact" class="btn btn-primary" style="margin-top:1rem">Say Hello</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="card">
+          <div class="card-tag">Web App</div>
+          <h3 class="card-title">Project Alpha</h3>
+          <p class="card-desc">
+            A full-stack task management app built with React and Node.js.
+            Features real-time updates, drag-and-drop boards, and team collaboration.
+          </p>
+          <div class="card-footer">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">PostgreSQL</span>
+          </div>
+          <div class="card-links">
+            <a href="#" class="link-btn">Live Demo</a>
+            <a href="#" class="link-btn">GitHub</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-tag">API</div>
+          <h3 class="card-title">Project Beta</h3>
+          <p class="card-desc">
+            A RESTful API for an e-commerce platform with authentication,
+            product management, order processing, and payment integration.
+          </p>
+          <div class="card-footer">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">Redis</span>
+          </div>
+          <div class="card-links">
+            <a href="#" class="link-btn">Live Demo</a>
+            <a href="#" class="link-btn">GitHub</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-tag">Mobile</div>
+          <h3 class="card-title">Project Gamma</h3>
+          <p class="card-desc">
+            A cross-platform mobile app for tracking personal fitness goals,
+            with charts, reminders, and a social feed for sharing milestones.
+          </p>
+          <div class="card-footer">
+            <span class="tech-tag">React Native</span>
+            <span class="tech-tag">Firebase</span>
+          </div>
+          <div class="card-links">
+            <a href="#" class="link-btn">App Store</a>
+            <a href="#" class="link-btn">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <ul>
+            <li>JavaScript / TypeScript</li>
+            <li>Python</li>
+            <li>HTML &amp; CSS</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h4>Frameworks &amp; Libraries</h4>
+          <ul>
+            <li>React / Next.js</li>
+            <li>Node.js / Express</li>
+            <li>FastAPI / Django</li>
+            <li>React Native</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h4>Tools &amp; Platforms</h4>
+          <ul>
+            <li>Git &amp; GitHub</li>
+            <li>Docker</li>
+            <li>AWS / Vercel</li>
+            <li>PostgreSQL / Redis</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h4>Soft Skills</h4>
+          <ul>
+            <li>Problem Solving</li>
+            <li>Team Collaboration</li>
+            <li>Technical Writing</li>
+            <li>Agile / Scrum</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section-alt">
+    <div class="container contact-container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-sub">
+        Whether you have a question, a project idea, or just want to say hi —
+        my inbox is always open.
+      </p>
+      <a href="mailto:jane@example.com" class="btn btn-primary btn-large">
+        Send Me an Email
+      </a>
+      <div class="social-links">
+        <a href="https://github.com/esragcetnky" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" target="_blank" rel="noopener">Twitter</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Designed &amp; built by Jane Doe &middot; 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
