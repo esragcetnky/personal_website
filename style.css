@@ -74,7 +74,7 @@ nav {
   display: flex;
   align-items: center;
   padding-top: var(--nav-h);
-  background: linear-gradient(160deg, #ffffff 0%, #eff6ff 50%, #dbeafe 100%);
+  background: #ffffff;
   position: relative;
   overflow: hidden;
 }
