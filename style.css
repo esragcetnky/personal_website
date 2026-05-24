@@ -159,17 +159,14 @@ nav {
   align-items: start;
 }
 
-.avatar-placeholder {
-  width: 110px;
-  height: 110px;
+.avatar-photo {
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
-  background: var(--color-accent);
-  color: #fff;
-  font-size: 1.8rem;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid var(--color-border);
+  display: block;
 }
 
 .about-text p { color: var(--color-muted); margin-bottom: 0.75rem; }
