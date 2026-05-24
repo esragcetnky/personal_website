@@ -1,3 +1,23 @@
+// Mouse spotlight effect on hero section
+const hero = document.querySelector('.hero');
+const spotlight = document.createElement('div');
+spotlight.className = 'hero-spotlight';
+hero.appendChild(spotlight);
+
+hero.addEventListener('mouseenter', () => {
+  spotlight.style.opacity = '1';
+});
+
+hero.addEventListener('mouseleave', () => {
+  spotlight.style.opacity = '0';
+});
+
+hero.addEventListener('mousemove', (e) => {
+  const rect = hero.getBoundingClientRect();
+  spotlight.style.left = (e.clientX - rect.left) + 'px';
+  spotlight.style.top  = (e.clientY - rect.top)  + 'px';
+});
+
 // Highlight active nav link based on scroll position
 const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll(".nav-links a");
