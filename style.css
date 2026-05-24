@@ -358,6 +358,14 @@ nav {
   color: var(--color-accent);
 }
 
+.lang-breakdown {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--color-accent);
+  margin-top: 0.15rem;
+  letter-spacing: 0.02em;
+}
+
 /* ── Contact ──────────────────────────────────────────────── */
 .contact-container { text-align: center; }
 
