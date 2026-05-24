@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jane Doe — Personal Website</title>
+  <title>Esra Gül Çetinkaya — Data Scientist</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,9 +11,10 @@
   <!-- Navigation -->
   <nav>
     <div class="nav-inner">
-      <span class="nav-logo">Jane Doe</span>
+      <span class="nav-logo">Esra Gül Çetinkaya</span>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -25,8 +26,8 @@
   <header class="hero">
     <div class="hero-inner">
       <p class="hero-greeting">Hi, I'm</p>
-      <h1 class="hero-name">Jane Doe</h1>
-      <p class="hero-tagline">Software Developer &amp; Lifelong Learner</p>
+      <h1 class="hero-name">Esra Gül Çetinkaya</h1>
+      <p class="hero-tagline">Data Scientist &mdash; AI, ML &amp; Generative AI</p>
       <div class="hero-cta">
         <a href="#projects" class="btn btn-primary">View My Work</a>
         <a href="#contact" class="btn btn-outline">Get in Touch</a>
@@ -40,18 +41,22 @@
       <h2 class="section-title">About Me</h2>
       <div class="about-grid">
         <div class="about-avatar">
-          <div class="avatar-placeholder">JD</div>
+          <div class="avatar-placeholder">EG</div>
         </div>
         <div class="about-text">
           <p>
-            Hello! I'm Jane, a passionate software developer based in Istanbul.
-            I love building clean, user-friendly products and solving problems
-            through code.
+            I'm a Data Scientist based in Ankara, Turkey with a BS in Computer
+            Engineering from Eskisehir Osmangazi University. I specialise in
+            machine learning, time series forecasting, and generative AI —
+            turning complex data into actionable insights and production-ready
+            AI systems.
           </p>
           <p>
-            When I'm not coding, you'll find me reading, hiking, or exploring
-            new coffee shops. I'm currently open to new opportunities — feel
-            free to reach out!
+            At Enerjisa Corporation I've built everything from electricity price
+            forecasting models (MAPE ~4%) to RAG-powered chatbots and MLOps
+            pipelines. I'm passionate about bridging the gap between research
+            and real-world impact, and I enjoy delivering training sessions that
+            help business teams adopt data-driven thinking.
           </p>
           <a href="#contact" class="btn btn-primary" style="margin-top:1rem">Say Hello</a>
         </div>
@@ -59,61 +64,102 @@
     </div>
   </section>
 
+  <!-- Experience -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-company">Enerjisa Corporation</span>
+            <span class="timeline-period">Feb 2022 — Present</span>
+          </div>
+          <p class="timeline-role">Data Scientist</p>
+          <ul class="timeline-bullets">
+            <li>Built a Prophet-based model forecasting Turkey's Electricity Market Clearing Prices with an average MAPE of 4%.</li>
+            <li>Developed invoice anomaly detection with Microsoft's DiT base model, achieving an F1 score above 95%.</li>
+            <li>Designed RAG systems and AI chatbots using LLMs, LangChain, Azure AI Foundry, and LLM Guardrails.</li>
+            <li>Built and maintained MLOps pipelines with Airflow; monitored model drift using MLflow and Great Expectations.</li>
+            <li>Delivered Python and AI training sessions to business teams to enable self-service data-driven prototyping.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-company">VISEA Innovative</span>
+            <span class="timeline-period">Aug 2021 — Sept 2021</span>
+          </div>
+          <p class="timeline-role">ML Engineer Intern</p>
+          <ul class="timeline-bullets">
+            <li>Built a binary classification ML model using Decision Trees, Random Forest, and XGBoost.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- Projects -->
-  <section id="projects" class="section section-alt">
+  <section id="projects" class="section">
     <div class="container">
       <h2 class="section-title">Projects</h2>
       <div class="projects-grid">
 
         <div class="card">
-          <div class="card-tag">Web App</div>
-          <h3 class="card-title">Project Alpha</h3>
+          <div class="card-tag">GenAI · 2025</div>
+          <h3 class="card-title">MultiBot Hub</h3>
           <p class="card-desc">
-            A full-stack task management app built with React and Node.js.
-            Features real-time updates, drag-and-drop boards, and team collaboration.
-          </p>
-          <div class="card-footer">
-            <span class="tech-tag">React</span>
-            <span class="tech-tag">Node.js</span>
-            <span class="tech-tag">PostgreSQL</span>
-          </div>
-          <div class="card-links">
-            <a href="#" class="link-btn">Live Demo</a>
-            <a href="#" class="link-btn">GitHub</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-tag">API</div>
-          <h3 class="card-title">Project Beta</h3>
-          <p class="card-desc">
-            A RESTful API for an e-commerce platform with authentication,
-            product management, order processing, and payment integration.
+            A modular AI platform featuring multiple specialised bots — Ask Me
+            Anything, Grammar Helper, Compare Files, Agreement Generator —
+            accessible via a Streamlit frontend and FastAPI backend with
+            history management and customisable parameters.
           </p>
           <div class="card-footer">
             <span class="tech-tag">Python</span>
+            <span class="tech-tag">Streamlit</span>
             <span class="tech-tag">FastAPI</span>
-            <span class="tech-tag">Redis</span>
+            <span class="tech-tag">FAISS</span>
+            <span class="tech-tag">OpenAI API</span>
           </div>
           <div class="card-links">
-            <a href="#" class="link-btn">Live Demo</a>
             <a href="#" class="link-btn">GitHub</a>
           </div>
         </div>
 
         <div class="card">
-          <div class="card-tag">Mobile</div>
-          <h3 class="card-title">Project Gamma</h3>
+          <div class="card-tag">GenAI · 2024</div>
+          <h3 class="card-title">Turkish Voicebot</h3>
           <p class="card-desc">
-            A cross-platform mobile app for tracking personal fitness goals,
-            with charts, reminders, and a social feed for sharing milestones.
+            An interactive voicebot capable of understanding and responding
+            in Turkish, built with Streamlit, OpenAI, and Google
+            Text-to-Speech (gTTS).
           </p>
           <div class="card-footer">
-            <span class="tech-tag">React Native</span>
-            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Streamlit</span>
+            <span class="tech-tag">OpenAI API</span>
+            <span class="tech-tag">gTTS</span>
           </div>
           <div class="card-links">
-            <a href="#" class="link-btn">App Store</a>
+            <a href="#" class="link-btn">GitHub</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-tag">Deep Learning · 2024</div>
+          <h3 class="card-title">DiT-Base Image Similarity</h3>
+          <p class="card-desc">
+            Explored image similarity techniques using DiT-Base models on
+            CT-Scan images. Implemented deep learning models to assess and
+            compare image similarities using distance and similarity metrics.
+          </p>
+          <div class="card-footer">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">PyTorch</span>
+            <span class="tech-tag">DiT-Base</span>
+          </div>
+          <div class="card-links">
             <a href="#" class="link-btn">GitHub</a>
           </div>
         </div>
@@ -123,48 +169,46 @@
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="section">
+  <section id="skills" class="section section-alt">
     <div class="container">
       <h2 class="section-title">Skills</h2>
       <div class="skills-grid">
 
         <div class="skill-group">
-          <h4>Languages</h4>
+          <h4>Programming</h4>
           <ul>
-            <li>JavaScript / TypeScript</li>
             <li>Python</li>
-            <li>HTML &amp; CSS</li>
             <li>SQL</li>
+            <li>C / C++ / C#</li>
           </ul>
         </div>
 
         <div class="skill-group">
-          <h4>Frameworks &amp; Libraries</h4>
+          <h4>ML &amp; AI</h4>
           <ul>
-            <li>React / Next.js</li>
-            <li>Node.js / Express</li>
-            <li>FastAPI / Django</li>
-            <li>React Native</li>
+            <li>Keras / PyTorch / Sklearn</li>
+            <li>LangChain / LangGraph</li>
+            <li>ChromaDB / FAISS</li>
+            <li>Numpy / Pandas / Matplotlib</li>
           </ul>
         </div>
 
         <div class="skill-group">
-          <h4>Tools &amp; Platforms</h4>
+          <h4>Platforms &amp; Cloud</h4>
           <ul>
-            <li>Git &amp; GitHub</li>
-            <li>Docker</li>
-            <li>AWS / Vercel</li>
-            <li>PostgreSQL / Redis</li>
+            <li>Azure ML Studio</li>
+            <li>AWS</li>
+            <li>Jupyter Notebooks</li>
           </ul>
         </div>
 
         <div class="skill-group">
-          <h4>Soft Skills</h4>
+          <h4>Tools &amp; MLOps</h4>
           <ul>
-            <li>Problem Solving</li>
-            <li>Team Collaboration</li>
-            <li>Technical Writing</li>
-            <li>Agile / Scrum</li>
+            <li>Airflow / MLflow</li>
+            <li>Great Expectations</li>
+            <li>Hadoop / Superset</li>
+            <li>PowerBI / Jira</li>
           </ul>
         </div>
 
@@ -173,26 +217,25 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="section section-alt">
+  <section id="contact" class="section">
     <div class="container contact-container">
       <h2 class="section-title">Get In Touch</h2>
       <p class="contact-sub">
-        Whether you have a question, a project idea, or just want to say hi —
-        my inbox is always open.
+        Whether you have a project, an opportunity, or just want to talk
+        data &mdash; my inbox is always open.
       </p>
-      <a href="mailto:jane@example.com" class="btn btn-primary btn-large">
-        Send Me an Email
+      <a href="mailto:esragcetinkaya@gmail.com" class="btn btn-primary btn-large">
+        esragcetinkaya@gmail.com
       </a>
       <div class="social-links">
         <a href="https://github.com/esragcetnky" target="_blank" rel="noopener">GitHub</a>
-        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="#" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://www.linkedin.com/in/esragulcetinkaya" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>Designed &amp; built by Jane Doe &middot; 2026</p>
+    <p>Designed &amp; built by Esra Gül Çetinkaya &middot; 2026</p>
   </footer>
 
   <script src="script.js"></script>
