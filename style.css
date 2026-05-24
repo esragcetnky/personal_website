@@ -253,24 +253,10 @@ nav {
   margin-bottom: 0.75rem;
 }
 
-.timeline-bullets {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-
-.timeline-bullets li {
+.timeline-summary {
   font-size: 0.92rem;
   color: var(--color-muted);
-  padding-left: 1rem;
-  position: relative;
-}
-.timeline-bullets li::before {
-  content: "–";
-  position: absolute;
-  left: 0;
-  color: var(--color-accent);
+  line-height: 1.7;
 }
 
 /* ── Projects ─────────────────────────────────────────────── */
