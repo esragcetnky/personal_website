@@ -79,30 +79,17 @@ nav {
   overflow: hidden;
 }
 
-.hero::before {
-  content: "";
+.hero-spotlight {
   position: absolute;
-  top: -120px;
-  right: -120px;
-  width: 500px;
-  height: 500px;
+  width: 480px;
+  height: 480px;
   border-radius: 50%;
-  background: radial-gradient(circle, #bfdbfe 0%, transparent 70%);
-  opacity: 0.6;
+  background: radial-gradient(circle, rgba(147, 197, 253, 0.45) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
   pointer-events: none;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  bottom: -80px;
-  left: -80px;
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  background: radial-gradient(circle, #93c5fd 0%, transparent 70%);
-  opacity: 0.3;
-  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
 }
 
 .hero-inner {
