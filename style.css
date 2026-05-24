@@ -74,7 +74,11 @@ nav {
   display: flex;
   align-items: center;
   padding-top: var(--nav-h);
-  background: #ffffff;
+  background:
+    radial-gradient(ellipse 55% 45% at 15% 25%, #dbeafe 0%, transparent 100%),
+    radial-gradient(ellipse 40% 50% at 85% 75%, #bfdbfe 0%, transparent 100%),
+    radial-gradient(ellipse 30% 35% at 70% 15%, #e0f2fe 0%, transparent 100%),
+    #ffffff;
   position: relative;
   overflow: hidden;
 }
@@ -126,6 +130,15 @@ nav {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+.hero-sparkle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ffffff, #93c5fd);
+  pointer-events: none;
+  z-index: 2;
+  box-shadow: 0 0 5px rgba(147, 197, 253, 0.9), 0 0 10px rgba(147, 197, 253, 0.4);
 }
 
 /* ── Buttons ──────────────────────────────────────────────── */
