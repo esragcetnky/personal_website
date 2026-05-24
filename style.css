@@ -74,12 +74,17 @@ nav {
   display: flex;
   align-items: center;
   padding-top: var(--nav-h);
+  background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 60%);
 }
 
 .hero-inner {
   max-width: var(--max-w);
   margin: 0 auto;
   padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 4rem;
 }
 
 .hero-greeting {
@@ -90,7 +95,7 @@ nav {
 }
 
 .hero-name {
-  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-size: clamp(2rem, 5vw, 3.8rem);
   font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1.05;
@@ -98,15 +103,77 @@ nav {
 }
 
 .hero-tagline {
-  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-size: clamp(1rem, 2vw, 1.2rem);
   color: var(--color-muted);
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .hero-cta {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+/* Hero stats */
+.hero-stats {
+  display: flex;
+  gap: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-accent);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  margin-top: 0.25rem;
+}
+
+/* Hero photo */
+.hero-photo {
+  flex-shrink: 0;
+}
+
+.hero-photo-ring {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  padding: 5px;
+  background: linear-gradient(135deg, var(--color-accent), #818cf8);
+  box-shadow: 0 20px 60px rgba(37, 99, 235, 0.2);
+}
+
+.hero-photo-ring img,
+.hero-photo-ring .avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 4px solid white;
+}
+
+.hero-photo-ring .avatar-placeholder {
+  font-size: 3rem;
+  background: var(--color-accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
 }
 
 /* ── Buttons ──────────────────────────────────────────────── */
@@ -374,7 +441,31 @@ footer {
 }
 
 /* ── Responsive ───────────────────────────────────────────── */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-photo {
+    order: -1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-photo-ring {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero-cta {
+    justify-content: center;
+  }
+
+  .hero-stats {
+    justify-content: center;
+  }
+
   .about-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
