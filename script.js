@@ -127,3 +127,21 @@ const observer = new IntersectionObserver(
 );
 
 sections.forEach(s => observer.observe(s));
+
+// ── Mobile nav toggle ─────────────────────────────────────────
+const navToggle = document.querySelector('.nav-toggle');
+const navLinksList = document.querySelector('.nav-links');
+
+navToggle.addEventListener('click', () => {
+  const open = navLinksList.classList.toggle('open');
+  navToggle.classList.toggle('open', open);
+  navToggle.setAttribute('aria-expanded', open);
+});
+
+navLinksList.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    navLinksList.classList.remove('open');
+    navToggle.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  });
+});
